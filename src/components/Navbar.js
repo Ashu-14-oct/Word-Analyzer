@@ -1,8 +1,12 @@
 import React from 'react'
 
-function Navbar(props) {
+let MyStyle = {
+
+}
+
+function Navbar(props) { 
   return (
-    <div>
+    <div style={MyStyle}> 
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
           <a className="navbar-brand" href="/">{props.title}</a>
@@ -14,14 +18,14 @@ function Navbar(props) {
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="/">Home</a>
               </li>
+              <li className="nav-item">
+                <a className="nav-link active" aria-current="page" href="/">About</a>
+              </li>
               {/* <li className="nav-item">
                 <a className="nav-link disabled">Disabled</a>
               </li> */}
             </ul>
-            <form className="d-flex" role="search">
-              <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-              <button className="btn btn-primary" type="submit">Search</button>
-            </form>
+            <button type="button" class="btn btn-primary my-2">Enable dark mode</button>
           </div>
         </div>
       </nav>
